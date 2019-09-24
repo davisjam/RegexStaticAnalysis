@@ -179,7 +179,7 @@ public class AnalysisDriverStdOut {
 							/* We only construct the exploit string if the user asks for it */
 							System.out.println("NFA constructed in: " + ar.getNfaConstructionTime() + "ms");
 							System.out.println("EDA analysis performed in: " + ar.getEdaAnalysisTime() + "ms");
-							System.out.println("Contains EDA with: " + edaExploitString);
+							System.out.println("Contains EDA with: " + edaExploitStringStr);
 							if (constructedEdaExploitString) {
                 System.out.println("\tEDA exploit string as JSON:\t" + new Gson().toJson(edaExploitString));
 								System.out.println("\tPrefix:\t\"" + edaExploitString.getPrefixVisual() + "\"");
